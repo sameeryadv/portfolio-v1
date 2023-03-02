@@ -278,7 +278,7 @@ i{
     flex-direction: row-reverse;
     align-content: flex-start;
     flex-wrap: nowrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
     padding: 10px;
 }
