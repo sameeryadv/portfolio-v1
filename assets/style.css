@@ -279,6 +279,7 @@ i{
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: flex-start;
+    padding: 10px;
 }
 
 .skillset>div{
@@ -291,14 +292,15 @@ i{
     flex-direction: column;
     align-items: center;
     position: relative;
-    height: 10vw;
+    height: clamp(80px,10vw,160px);
     padding: 2rem 1.75rem;
     background-color: var(--light-navy);
     overflow: auto;
     margin: 14px;
+    overflow: hidden;
     align-content: center;
-    flex-wrap: wrap;
-    width: 10vw;
+    flex-wrap: no-wrap;
+    width: clamp(80px,10vw,160px);
 }
 
 .skillset>div:hover{
@@ -390,6 +392,10 @@ i{
     animation-iteration-count: infinite;
 }
 
+.skills{
+    margin-top: 100px;
+}
+
 @keyframes intopage {
     0%{
         background-size: 0%;
@@ -402,3 +408,4 @@ i{
         background-size: 0%     ;
     }
 }
+
