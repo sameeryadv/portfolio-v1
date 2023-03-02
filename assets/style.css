@@ -42,8 +42,6 @@ body{
     color: var(--lightest-slate);
     overflow-x: hidden;
     font-family: var(--font-sans);
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none
 }
 
 ::selection{
@@ -355,7 +353,36 @@ i{
     width: -webkit-fill-available;
     top: 0;
     background-color: var(--navy);
-    z-index: 9999999999;
+    z-index: 999999;
     opacity: 0.9;
     height: 60px ;
+}
+
+.navbar-toggler-icon{
+    background-image: url("img/icon.svg");
+}
+
+.navbar>div{
+    background-color: var(--navy);
+}
+
+#loader{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: var(--dark-navy);
+    z-index: 99999999;
+    
+}
+
+#loader::before{
+    content: "";
+    position: fixed;
+    z-index: 9999999999;
+    background: url('img/favicon.png');
+    width: 100vw;
+    height: 100vh;
+    background-position: center center;
+    background-size: 10%;
+    background-repeat: no-repeat;
 }

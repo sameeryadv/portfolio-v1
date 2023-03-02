@@ -19,6 +19,11 @@
     <title>Sameer Yadav</title>
 </head>
 <body>
+
+
+    <div id="loader">
+        
+    </div>
     <div class="container-fluid web-wrapper">
         <section class="navigation">
             <nav class="navbar navbar-expand-lg">
@@ -100,6 +105,11 @@
 
 
     <!-- JS Source Files for Bootstrap and FontAwesome -->
+    <script>
+        setTimeout(function () {
+            document.getElementById('loader').style.display = "none";
+        },900)
+    </script>
     <script src="https://kit.fontawesome.com/d3aa62fa79.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
