@@ -383,6 +383,22 @@ i{
     width: 100vw;
     height: 100vh;
     background-position: center center;
-    background-size: 10%;
+    background-size: 0%;
     background-repeat: no-repeat;
+    animation-name: intopage;
+    animation-duration: 0.9s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes intopage {
+    0%{
+        background-size: 0%;
+    }
+
+    50%{
+        background-size: 10%;
+    }
+    100%{
+        background-size: 0%     ;
+    }
 }
