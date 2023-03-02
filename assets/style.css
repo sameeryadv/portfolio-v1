@@ -98,6 +98,7 @@ i{
 
 .icons>li{
     padding: 8px;
+    transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .web-wrapper{
@@ -385,7 +386,7 @@ i{
     width: 100vw;
     height: 100vh;
     background-position: center center;
-    background-size: 0%;
+    background-size: 10%;
     background-repeat: no-repeat;
     animation-name: intopage;
     animation-duration: 0.9s;
@@ -409,3 +410,8 @@ i{
     }
 }
 
+
+.icons>li:hover{
+   transform: rotateZ(270deg);
+   transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
