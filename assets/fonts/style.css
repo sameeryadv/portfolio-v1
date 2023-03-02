@@ -1,0 +1,13 @@
+@font-face {
+font-family: 'SF Mono';
+font-style: normal;
+font-weight: normal;
+src: local('SF Mono Regular'), url('SFMonoRegular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Calibre';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Calibre'), url('Calibre.woff') format('woff');
+    }
