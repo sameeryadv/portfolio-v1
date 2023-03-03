@@ -158,6 +158,9 @@ i{
     min-height: 100vh;
     height: 100vh;
     padding: 0px;
+    animation-name: swipe;
+    animation-duration: 2s ;
+    animation-delay: 0.5s;
 }
 
 .hero>h2{
@@ -414,4 +417,13 @@ i{
 .icons>li:hover{
    transform: rotateZ(270deg);
    transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+@keyframes swipe {
+    from{
+        transform: translate(-100px,0px);
+    }
+    to{
+        transform: translate(0px,0px);
+    }
 }
